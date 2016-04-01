@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.Petunjuk"/>
+      <point      
+        x = "3798"      
+        y = "866"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.MainDesktop"/>
+      <point      
+        x = "5654"      
+        y = "2260"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.Tabs"/>
+      <point      
+        x = "1864"      
+        y = "1728"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.TeknisiProfile"/>
+      <point      
+        x = "651"      
+        y = "3421"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.RegisterActivity"/>
+      <point      
+        x = "303"      
+        y = "1974"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.Login"/>
+      <point      
+        x = "6196"      
+        y = "763"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.MainLaptop"/>
+      <point      
+        x = "2612"      
+        y = "172"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.DHardware"/>
+      <point      
+        x = "2037"      
+        y = "3687"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.Penjual"/>
+      <point      
+        x = "5121"      
+        y = "3452"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.ListTeknisi"/>
+      <point      
+        x = "1593"      
+        y = "66"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.DSoftware"/>
+      <point      
+        x = "5654"      
+        y = "2168"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.LHardware"/>
+      <point      
+        x = "4904"      
+        y = "594"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.Utama"/>
+      <point      
+        x = "360"      
+        y = "60"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.projekhalamanlangitblogspot.dokterpc2.LSoftware"/>
+      <point      
+        x = "3555"      
+        y = "3216"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
