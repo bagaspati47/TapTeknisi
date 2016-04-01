@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Utama"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/txtutm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi! Saya TapTeknisi..\nada yang bisa saya bantu?"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:clickable="false">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="BANTU SAYA"
+            android:id="@+id/btnutama"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:focusable="false" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="#00bc26"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="HUBUNGI TEKNISI"
+            android:id="@+id/btncekteknisi"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtDaftarTeknisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="atau Daftar sebagai Teknisi"
+            android:layout_gravity="center"
+            android:onClick="sendRegTek"/>
+    </LinearLayout>
+
+</RelativeLayout>

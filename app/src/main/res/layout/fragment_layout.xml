@@ -1,0 +1,33 @@
+<com.projekhalamanlangitblogspot.dokterpc2.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <Button
+        android:id="@+id/Dhardwarebtn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/hardware"
+        android:text=".hardware"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:onClick="sendDhardware"
+        android:textColor="#353535"
+        android:layout_above="@+id/Dsoftwarebtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+    
+    <Button
+        android:id="@+id/Dsoftwarebtn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/software"
+        android:text=".software"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:onClick="sendDsoftware"
+        android:textColor="#353535"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp" />
+
+</com.projekhalamanlangitblogspot.dokterpc2.DashboardLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TapTeknisi</string>
+    <string name="title_activity_dsoftware">DSoftware</string>
+    <string name="btn">bantu saya</string>
+    <string name="txtptnjk">TapTeknisi adalah aplikasi sederhana yang diterapkan pada sistem Android, aplikasi ini bekerja sebagai
+    solusi dasar sekitar masalah komputer, aplikasi ini juga menyediakan kontak-kontak penjual terpercaya,
+        mulai dari yang Online maupun di sekitar anda. \n\nAplikasi ini dapat menyediakan jasa Teknisi. Teknisi yang sudah terdaftar melewati kami,
+        Teknisi tersebut akan berada di Kontak Teknisi yang langsung dapat anda hubungi. \n\nBerikut petunjuk penggunaannya:</string>
+
+    <string name="txtLinkHint">Link Foto\nContoh: http://10.0.3.2/gambar/alex.jpg</string>
+
+    <string name="hello_world">Android Material Design App Bar/ActionBar</string>
+    <string name="action_about">Tentang</string>
+    <string name="action_share">Share</string>
+    <string name="action_search">Search</string>
+    <string name="setRange"></string>
+
+    <!-- Strings related to register -->
+    <string name="button_register">Register</string>
+    <string name="string_already_registered">Sudah terdaftar? klik tombol di bawah</string>
+
+    <!-- Strings related to tentang -->
+    <string name="txttntang">TapTeknisi \n\nIde: Muhamad Akiu Bagaspati \nProgrammer: Muhamad Akiu Bagaspati
+    \nSourceCode dan Tutorial: youtube.com, google.co.id, simplifiedcoding.net, code.org, udacity.com, stackoverflow.com, developers.google.com \n\nKontak: 089680139247 \nEmail: gagakitem47@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
