@@ -34,8 +34,8 @@ import java.util.List;
 public class ListTeknisi extends AppCompatActivity {
     private Toolbar toolbar;
     private RecyclerView recyclerView;
-    //private static final String URL = "http://10.0.3.2//koneksi_android/myjson.php";
-    private static final String URL = "http://tapteknisi.hol.es/koneksi_android/myjson.php";
+    private static final String URL = "http://10.0.3.2//koneksi_android/myjson.php";
+    //private static final String URL = "http://tapteknisi.hol.es/koneksi_android/myjson.php";
 
     private String name, image, number, reputasi;
     private MyTask task;

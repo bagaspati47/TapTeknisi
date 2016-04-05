@@ -20,9 +20,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
     ////alamat php login (untuk memanggil ke database mysql)
 
-    //private static final String LOGIN_URL = "http://10.0.3.2/koneksi_android/login.php";
+    private static final String LOGIN_URL = "http://10.0.3.2/koneksi_android/login.php";
     //GENY/VBOX
-    private static final String LOGIN_URL = "http://tapteknisi.hol.es/koneksi_android/login.php";
+    //private static final String LOGIN_URL = "http://tapteknisi.hol.es/koneksi_android/login.php";
     //AVM
     //private static final String LOGIN_URL = "http://10.0.2.2/123/login.php";
     ///
