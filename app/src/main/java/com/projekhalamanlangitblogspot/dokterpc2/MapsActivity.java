@@ -40,8 +40,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+
         // Add a marker in Sydney and move the camera
-        LatLng gigantic = new LatLng(-6.2584336, 107.1464858);
+        LatLng gigantic = new LatLng(-6.2586043,107.147593);
         mMap.addMarker(new MarkerOptions().position(gigantic).title("Gigantic Computindo"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(gigantic));
 
@@ -51,24 +53,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(enter));
 
         // Add a marker in Sydney and move the camera
-        LatLng quantum = new LatLng(-6.1355624,106.8220775);
-        mMap.addMarker(new MarkerOptions().position(quantum).title("Enter Komputer"));
+        LatLng quantum = new LatLng(-6.1355571,106.8220828);
+        mMap.addMarker(new MarkerOptions().position(quantum).title("Quantum Komputer"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(quantum));
     }
 
-    public void onZoomin (View view)
-    {
-        if(view.getId()==R.id.zoomin);
-        {
-            mMap.animateCamera(CameraUpdateFactory.zoomIn());
-        }
-    }
-
-    public void onZoomut (View view)
-    {
-        if(view.getId()==R.id.zoomout);
-        {
-            mMap.animateCamera(CameraUpdateFactory.zoomOut());
-        }
-    }
 }

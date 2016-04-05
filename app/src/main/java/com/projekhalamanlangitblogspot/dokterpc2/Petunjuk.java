@@ -16,7 +16,7 @@ public class Petunjuk extends AppCompatActivity {
         setContentView(R.layout.activity_petunjuk);
 
         /////youtube webview by http://www.viralandroid.com/ @ 6 April 2016
-        String frameVideo = "<html><body>Video From YouTube<br><iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/47yJ2XCRLZs\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
+        String frameVideo = "<html><body>Video From YouTube<br><iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/ybo30QlSk64\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
 
         WebView displayYoutubeVideo = (WebView) findViewById(R.id.mWebView);
         displayYoutubeVideo.setWebViewClient(new WebViewClient() {

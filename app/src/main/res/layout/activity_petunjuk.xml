@@ -40,19 +40,13 @@
                 android:layout_alignBottom="@+id/RAM"
                 android:layout_marginBottom="5dp"/>
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.79"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-
                 <WebView
                     android:id="@+id/mWebView"
                     android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
                 </WebView>
-            </LinearLayout>
+
 
 
 
