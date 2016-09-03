@@ -4,8 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".DHardware"
-    android:background="@drawable/bg">
+    tools:context=".DHardware">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:scaleType="centerCrop"/>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

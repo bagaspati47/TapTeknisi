@@ -14,10 +14,11 @@
     <string name="action_share">Share</string>
     <string name="action_search">Search</string>
     <string name="setRange"></string>
+    <string name="textView3">Bingung mendapatkan link/alamat foto profil? \nKlik tombol disamping untuk mengunggah dan tunggu 1X24 Jam.</string>
 
     <!-- Strings related to register -->
     <string name="button_register">Register</string>
-    <string name="string_already_registered">Sudah terdaftar? klik tombol di bawah</string>
+    <string name="string_already_registered">Sudah daftar? klik tombol di bawah untuk mengecek status aktif akun maupun reputasi</string>
 
     <!-- Strings related to tentang -->
     <string name="txttntang">TapTeknisi \n\nIde: Muhamad Akiu Bagaspati \nProgrammer: Muhamad Akiu Bagaspati

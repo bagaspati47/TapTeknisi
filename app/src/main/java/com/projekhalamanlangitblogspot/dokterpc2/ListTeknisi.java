@@ -114,10 +114,10 @@ public class ListTeknisi extends AppCompatActivity {
                 JSONArray jsonMainNode = jsonResponse.optJSONArray("result");
                 for (int i = 0; i < jsonMainNode.length(); i++) {
                     JSONObject jsonChildNode = jsonMainNode.getJSONObject(i);
-                    name = jsonChildNode.optString("namateknisi");
-                    number = jsonChildNode.optString("nomerhpteknisi");
-                    image = jsonChildNode.optString("foto");
-                    reputasi = jsonChildNode.optString("reputasi");
+                    name = jsonChildNode.optString("nm_teknisi");
+                    number = jsonChildNode.optString("hp_teknisi");
+                    image = jsonChildNode.optString("fp_link");
+                    reputasi = jsonChildNode.optString("sts_reputasi");
 
                     customList.add(new Stock(name, number, image, reputasi));
 

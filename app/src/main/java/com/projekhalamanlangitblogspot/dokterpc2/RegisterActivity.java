@@ -2,6 +2,7 @@ package com.projekhalamanlangitblogspot.dokterpc2;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.net.URL;
 import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
@@ -51,7 +54,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         buttonLogin.setOnClickListener(this);
     }
-
+    public void drive (View view){
+        Intent driveIntent=new Intent(Intent.ACTION_VIEW,Uri.parse("https://drive.google.com/folderview?id=0BxlJHYxZTqirS0NURkZFRDNNSkk&usp=sharing"));
+        startActivity(driveIntent);
+    }
     /**
      * kode koneksi tombol ke activity lain.
      * sourcecode by juned on 2/11/12 http://stackoverflow.com/questions/13194081/how-to-open-a-second-activity-on-click-of-button-in-android-app
@@ -68,22 +74,22 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             registerUser();
         }
         if (v == buttonLogin) {
-            startActivity(new Intent(this, Login.class));
+            startActivity(new Intent(this, StatusActivity.class));
         }
     }
 
     private void registerUser() {
-        String namateknisi = editTextName.getText().toString().trim();
-        String username = editTextUsername.getText().toString().trim();
-        String katasandi = editTextPassword.getText().toString().trim();
-        String nomerhpteknisi = editTextHp.getText().toString().trim();
+        String nm_teknisi = editTextName.getText().toString().trim();
+        String un_teknisi = editTextUsername.getText().toString().trim();
+        String pw_teknisi = editTextPassword.getText().toString().trim();
+        String hp_teknisi = editTextHp.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
-        String foto = editTextFotoLink.getText().toString().trim();
+        String fp_link = editTextFotoLink.getText().toString().trim();
 
-        register(namateknisi, username, katasandi, nomerhpteknisi, email, foto);
+        register(nm_teknisi, un_teknisi, pw_teknisi, hp_teknisi, email, fp_link);
     }
 
-    private void register(String namateknisi, String username, String katasandi, String nomerhpteknisi, String email, String foto) {
+    private void register(String nm_teknisi, String un_teknisi, String pw_teknisi, String hp_teknisi, String email, String fp_link) {
         class RegisterUser extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             RequestHandler ruc = new RequestHandler();
@@ -106,12 +112,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             protected String doInBackground(String... params) {
 
                 HashMap<String, String> data = new HashMap<String, String>();
-                data.put("namateknisi", params[0]);
-                data.put("username", params[1]);
-                data.put("katasandi", params[2]);
-                data.put("nomerhpteknisi", params[3]);
+                data.put("nm_teknisi", params[0]);
+                data.put("un_teknisi", params[1]);
+                data.put("pw_teknisi", params[2]);
+                data.put("hp_teknisi", params[3]);
                 data.put("email", params[4]);
-                data.put("foto", params[5]);
+                data.put("fp_link", params[5]);
 
                 String result = ruc.sendPostRequest(REGISTER_URL, data);
 
@@ -120,7 +126,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
 
         RegisterUser ru = new RegisterUser();
-        ru.execute(namateknisi, username, katasandi, nomerhpteknisi, email, foto);
+        ru.execute(nm_teknisi, un_teknisi, pw_teknisi, hp_teknisi, email, fp_link);
     }
 
 }

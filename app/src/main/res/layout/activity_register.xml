@@ -1,19 +1,30 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".RegisterTeknisi"
-    android:background="@drawable/bg">
-
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutdrive"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg2"
+            android:scaleType="centerCrop"/>
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="match_parent">
+
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp">
+
 
             <EditText
                 android:capitalize="characters"
@@ -78,7 +89,6 @@
                 android:textColor="#ffffff"
                 android:hint="@string/txtLinkHint"/>
 
-
             <Button
                 android:textStyle="bold"
                 android:layout_width="fill_parent"
@@ -86,9 +96,11 @@
                 android:text="@string/button_register"
                 android:id="@+id/buttonRegister"
                 android:textSize="20dp"
+                android:padding="25dp"
                 android:background="@color/colorAccent"/>
-
             <TextView
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,9 +112,44 @@
                 android:textStyle="bold"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="login sekarang!"
+                android:text="Cek Sekarang!"
                 android:id="@+id/buttonLogin"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:padding="20dp"/>
+
+
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        android:background="#078f8f8f"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutdrive">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="@string/textView3"
+            android:id="@+id/textView3"
+            android:gravity="start"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:background="#ff5100"
+            android:text="Unggah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="drive"
+            android:id="@+id/button"
+            android:padding="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
