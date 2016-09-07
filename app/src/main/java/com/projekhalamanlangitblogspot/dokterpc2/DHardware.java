@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -19,14 +20,13 @@ public class DHardware extends AppCompatActivity {
     private RadioButton bp1, bp2, bp3, bptnpjeda, bpbrx;
     private Button button, button2;
     private TextView textView;
+    private ImageView imgV1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dhardware);
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         radioGroup = (RadioGroup) findViewById(R.id.tipsRgroup);
 
@@ -35,6 +35,7 @@ public class DHardware extends AppCompatActivity {
         bp3 = (RadioButton) findViewById(R.id.rbeep3);
         bptnpjeda = (RadioButton) findViewById(R.id.rbeepp);
         bpbrx = (RadioButton) findViewById(R.id.rbeepbrx);
+        imgV1 = (ImageView) findViewById(R.id.imageView8);
 
         textView = (TextView) findViewById(R.id.textView5);
         button2 = (Button) findViewById(R.id.btnpnjl);
@@ -52,6 +53,7 @@ public class DHardware extends AppCompatActivity {
                             "pendingan yang kurang maksimal,\n" + "atau juga termal pasta pada processor sudah mengering.");
                     button2.setText("CEK PENJUAL FAN");
                     button2.setVisibility(View.VISIBLE);
+                    imgV1.setImageResource(R.drawable.bg2);
                 } else if (selectedId == bp2.getId()) {
                     textView.setText("Bunyi beep ini biasanya terdengar ketika pertama kali kita menyalakan komputer. Bunyi beep ini biasanya terdengar\n" +
                             "apabila terjadi kesalahan pada salah satu hardware yang terpasang pada komputer. Karena banyak produk BIOS\n" +
@@ -60,6 +62,7 @@ public class DHardware extends AppCompatActivity {
                             "sekali pada saat awal booting, dan itu menandakan komputer normal.");
                     button2.setText("CEK PENJUAL CMOS");
                     button2.setVisibility(View.VISIBLE);
+
                 } else if (selectedId == bp3.getId()) {
                     textView.setText("Masalah ini umumnya terjadi akibat RAM yang tidak terdeteksi sempurna. Karena fungsi sebuah RAM adalah sebagai\n" +
                             "penyimpanan sementara (menyimpan proses yang berjalan), jadi jika RAM tersebut bermasalah maka tidak ada\n" +

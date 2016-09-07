@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     ////alamat php register (untuk menginput ke database mysql)
 
-    private static final String REGISTER_URL = "http://10.0.3.2/koneksi_android/register.php";
+    private static final String REGISTER_URL = "http://tapteknisi.hol.es/koneksi_android/register.php";
     //private static final String REGISTER_URL = "http://tapteknisi.hol.es/koneksi_android/register.php";
     ////
 

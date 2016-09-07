@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context=".Penjual"
     android:weightSum="1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:scaleType="centerCrop"/>
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -20,11 +21,13 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical"
+            android:padding="20dp"
             android:weightSum="1">
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Petunjuk"
+                android:textColor="#fff"
                 android:textSize="50dp"
                 android:textStyle="bold"
                 android:id="@+id/TOKO"
@@ -34,6 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txtptnjk"
+                android:textColor="#fff"
                 android:clickable="false"
                 android:id="@+id/tokoterdekat"
                 android:linksClickable="true"
@@ -61,15 +65,17 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/LYbtnptnjk">
         <Button
-            android:background="@color/colorAccent"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Get Started"
+            android:text="Saya mengerti"
             android:onClick="sendTabs"
             android:textSize="20dp"
             android:textStyle="bold"
             android:id="@+id/button4"
             android:layout_below="@+id/tipsRgroup"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
     </LinearLayout>
 </RelativeLayout>

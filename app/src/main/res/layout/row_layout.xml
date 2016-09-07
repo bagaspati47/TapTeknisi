@@ -37,10 +37,9 @@
                 android:textStyle="bold"
                 />
 
-            <Button
-                android:background="#00bc26"
+            <android.support.v7.widget.AppCompatButton
                 android:layout_width="150dp"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:id="@+id/person_number"
                 android:autoLink="phone"
                 android:textSize="20sp"
@@ -49,6 +48,8 @@
                 android:textColorLink="#fff"
                 android:textStyle="bold"
                 android:clickable="true"
+
+
                 />
 
             <TextView

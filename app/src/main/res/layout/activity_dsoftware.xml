@@ -15,7 +15,6 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         android:minHeight="?attr/actionBarSize">
     </android.support.v7.widget.Toolbar>
 
@@ -134,7 +133,6 @@
                 android:text="SOLUSI?"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:background="@color/colorAccent"
                 android:id="@+id/button41"/>
         </LinearLayout>
 
