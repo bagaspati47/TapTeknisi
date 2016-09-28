@@ -29,7 +29,7 @@ public class Petunjuk extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         displayYoutubeVideo.loadData(frameVideo, "text/html", "utf-8");
 
-        findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Petunjuk.this, Tabs.class));

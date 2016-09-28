@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com.projekhalamanlangitblogspot.dokterpc2">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projekhalamanlangitblogspot.dokterpc2">
 
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
-<!--
+    <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-<application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
-    <activity android:name=".LaunchActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-    <activity android:name=".DSoftware" />
-    <activity android:name=".MainLaptop" />
-    <activity android:name=".Tabs" />
-    <activity android:name=".LHardware" />
-    <activity android:name=".LSoftware" />
-    <activity android:name=".About" />
-    <!--
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DSoftware" />
+        <activity android:name=".MainLaptop" />
+        <activity android:name=".Tabs" />
+        <activity android:name=".LHardware" />
+        <activity android:name=".LSoftware" />
+        <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
              Note that the API key is linked to the encryption key used to sign the APK.
@@ -36,17 +41,39 @@ package="com.projekhalamanlangitblogspot.dokterpc2">
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-    <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
-    <activity android:name=".MapsActivity" android:label="@string/title_activity_maps" />
-    <activity android:name=".StatusActivity"></activity>
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.Utama" android:theme="@style/AppTheme.Dark" />
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.RegisterActivity" android:theme="@style/AppTheme.Dark" />
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.Petunjuk" android:theme="@style/AppTheme.Dark" />
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.ListTeknisi" android:theme="@style/AppTheme.Dark" />
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.MainDesktop" android:theme="@style/AppTheme.Dark" />
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.DHardware" android:theme="@style/AppTheme.Dark" />
-    <activity android:name="com.projekhalamanlangitblogspot.dokterpc2.Penjual" android:theme="@style/AppTheme.Dark" />
-</application>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Utama"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Petunjuk"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".ListTeknisi"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".MainDesktop"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".DHardware"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".About"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".StatusActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".ListPenjual"
+            android:theme="@style/AppTheme.Dark"></activity>
+    </application>
 
 </manifest>

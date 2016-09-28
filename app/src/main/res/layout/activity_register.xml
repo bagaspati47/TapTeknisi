@@ -3,91 +3,64 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
-    <RelativeLayout
-        android:layout_width="fill_parent"
+    tools:context=".RegisterActivity"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/layoutdrive"
-        >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/bg2"
-            android:scaleType="centerCrop"/>
+        android:src="@drawable/bg2"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/layoutdrive"/>
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutdrive">
 
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_margin="20dp">
+            android:weightSum="1"
+            android:padding="20dp">
 
-
-            <EditText
-                android:capitalize="characters"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editTextName"
-                android:textColorHint="#ffff"
-                android:hint="Nama Lengkap" />
-
-            ///TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_choose_username"
-            android:textColor="#ffffff" />
 
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editTextUserName"
-                android:textColor="#ffffff"
-                android:hint="Inisial"/>
+                android:id="@+id/editTextName"
+                android:textColorHint="#484848"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"/>
 
-            ///TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_choose_password"
-            android:textColor="#ffffff" />
 
             <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:id="@+id/editTextPassword"
-                android:textColor="#ffffff"
-                android:hint="Kata Sandi"/>
-
-            <EditText
+                android:textColorHint="#484848"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextHp"
                 android:textColor="#ffffff"
-                android:hint="Nomer Handphone"/>
+                android:hint="Nomer Handphone"
+                android:inputType="phone"/>
 
-            ///TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_enter_email"
-            android:textColor="#ffffff" />
 
             <EditText
+                android:textColorHint="#484848"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:id="@+id/editTextEmail"
                 android:textColor="#ffffff"
-                android:hint="Email"/>
+                android:hint="Email" />
 
             <EditText
+                android:textColorHint="#484848"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextFotoLink"
                 android:textColor="#ffffff"
-                android:hint="@string/txtLinkHint"/>
+                android:hint="@string/txtLinkHint"
+                android:inputType="textWebEditText"/>
 
             <Button
                 android:textStyle="bold"
@@ -119,30 +92,32 @@
 
         </LinearLayout>
     </ScrollView>
-    </RelativeLayout>
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:background="#078f8f8f"
         android:layout_alignParentBottom="true"
-        android:id="@+id/layoutdrive">
+        android:id="@+id/layoutdrive"
+        android:orientation="horizontal"
+        >
         <TextView
             android:textStyle="bold"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/textView3"
             android:id="@+id/textView3"
-            android:gravity="start"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"/>
 
         <Button
             android:background="@drawable/button_selector"
             android:text="Unggah"
+            android:layout_gravity="center"
             android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="drive"
             android:id="@+id/button"
             android:padding="20dp"

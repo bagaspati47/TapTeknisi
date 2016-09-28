@@ -11,6 +11,7 @@ public class MainDesktop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_dekstop);
+        getSupportActionBar().hide();
         findViewById(R.id.Dhardwarebtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

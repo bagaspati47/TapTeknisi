@@ -45,6 +45,7 @@ public class DHardware extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int selectedId = radioGroup.getCheckedRadioButtonId();
+                imgV1.setVisibility(View.INVISIBLE);
 
                 // find which radioButton is checked by id
                 if (selectedId == bp1.getId()) {
@@ -53,7 +54,8 @@ public class DHardware extends AppCompatActivity {
                             "pendingan yang kurang maksimal,\n" + "atau juga termal pasta pada processor sudah mengering.");
                     button2.setText("CEK PENJUAL FAN");
                     button2.setVisibility(View.VISIBLE);
-                    imgV1.setImageResource(R.drawable.bg2);
+                    imgV1.setImageResource(R.drawable.mobproc);
+                    imgV1.setVisibility(View.VISIBLE);
                 } else if (selectedId == bp2.getId()) {
                     textView.setText("Bunyi beep ini biasanya terdengar ketika pertama kali kita menyalakan komputer. Bunyi beep ini biasanya terdengar\n" +
                             "apabila terjadi kesalahan pada salah satu hardware yang terpasang pada komputer. Karena banyak produk BIOS\n" +
@@ -62,6 +64,8 @@ public class DHardware extends AppCompatActivity {
                             "sekali pada saat awal booting, dan itu menandakan komputer normal.");
                     button2.setText("CEK PENJUAL CMOS");
                     button2.setVisibility(View.VISIBLE);
+                    imgV1.setImageResource(R.drawable.cmos);
+                    imgV1.setVisibility(View.VISIBLE);
 
                 } else if (selectedId == bp3.getId()) {
                     textView.setText("Masalah ini umumnya terjadi akibat RAM yang tidak terdeteksi sempurna. Karena fungsi sebuah RAM adalah sebagai\n" +
@@ -72,6 +76,8 @@ public class DHardware extends AppCompatActivity {
                             "motherboard.\n");
                     button2.setText("CEK PENJUAL RAM dan VGA");
                     button2.setVisibility(View.VISIBLE);
+                    imgV1.setImageResource(R.drawable.ram);
+                    imgV1.setVisibility(View.VISIBLE);
                 } else if (selectedId == bptnpjeda.getId()) {
                     textView.setText("Pada kondisi mati total ini, biasanya berhubungan dengan arus listrik, apa komputer mendapat suplly arus listrik atau\n" +
                             "tidak. Sehingga apabila komputer tidak mendapat suply listrik, maka bisa dipastikan komputer tidak akan pernah\n" +
@@ -80,6 +86,8 @@ public class DHardware extends AppCompatActivity {
                             "bermasalah.");
                     button2.setText("CEK PENJUAL POWERSUPPLY");
                     button2.setVisibility(View.VISIBLE);
+                    imgV1.setImageResource(R.drawable.psu);
+                    imgV1.setVisibility(View.VISIBLE);
                 } else if (selectedId == bpbrx.getId()) {
                     textView.setText("Biasanya kondisi komputer yang HANG ini disebabkan oleh tingginya data yang diproses tanpa mengimbangi\n" +
                             "kemampuan processor dan memory RAM dalam mem-buffer atau menampung sementara data yang diproses. Karena\n" +
@@ -88,6 +96,8 @@ public class DHardware extends AppCompatActivity {
                             "perintah yang sedang dieksekusi.");
                     button2.setText("CEK PENJUAL RAM");
                     button2.setVisibility(View.VISIBLE);
+                    imgV1.setImageResource(R.drawable.ram);
+                    imgV1.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -97,7 +107,7 @@ public class DHardware extends AppCompatActivity {
 
     public void sendPenjual(View view)
     {
-        Intent intent = new Intent(DHardware.this, Penjual.class);
+        Intent intent = new Intent(DHardware.this, ListPenjual.class);
         startActivity(intent);
     }
     /////tombol

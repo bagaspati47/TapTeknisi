@@ -18,31 +18,31 @@ public class Stock {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    //public void setName(String name) {
+        //this.name = name;
+    //}
 
     public String getNumber() {
         return number;
     }
 
-    public void setNumber(String price) {
-        this.number = price;
-    }
+    ///public void setNumber(String price) {
+       // this.number = price;
+   // }
 
     public String getPhotoId() {
         return photoId;
     }
 
-    public void setPhotoId(String photoId) {
-        this.photoId = photoId;
-    }
+    //public void setPhotoId(String photoId) {
+     //   this.photoId = photoId;
+   // }
 
     public String getReputasi() {
         return reputasi;
     }
 
-    public void setReputasi(String reputasi) {
-        this.reputasi = reputasi;
-    }
+    //public void setReputasi(String reputasi) {
+        //this.reputasi = reputasi;
+    //}
 }

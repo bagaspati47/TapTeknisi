@@ -75,7 +75,7 @@ public class
 
     public void sendPenjual2(View view)
     {
-        Intent intent = new Intent(DSoftware.this, Penjual.class);
+        Intent intent = new Intent(DSoftware.this, ListPenjual.class);
         startActivity(intent);
     }
     /////tombol

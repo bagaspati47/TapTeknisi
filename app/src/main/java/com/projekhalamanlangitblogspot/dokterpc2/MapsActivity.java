@@ -3,6 +3,7 @@ package com.projekhalamanlangitblogspot.dokterpc2;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ZoomControls;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -46,6 +47,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng gigantic = new LatLng(-6.2586043,107.147593);
         mMap.addMarker(new MarkerOptions().position(gigantic).title("Gigantic Computindo"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(gigantic));
+
 
         // Add a marker in Sydney and move the camera
         LatLng enter = new LatLng(-6.1368589,106.8219525);

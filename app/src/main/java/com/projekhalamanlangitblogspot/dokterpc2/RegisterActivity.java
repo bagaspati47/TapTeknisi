@@ -11,14 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.net.URL;
 import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText editTextName;
-    private EditText editTextUsername;
-    private EditText editTextPassword;
     private EditText editTextEmail;
     private EditText editTextHp;
     private EditText editTextFotoLink;
@@ -40,8 +37,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
 
         editTextName = (EditText) findViewById(R.id.editTextName);
-        editTextUsername = (EditText) findViewById(R.id.editTextUserName);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextHp = (EditText) findViewById(R.id.editTextHp);
         editTextFotoLink = (EditText) findViewById(R.id.editTextFotoLink);
@@ -80,16 +75,14 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private void registerUser() {
         String nm_teknisi = editTextName.getText().toString().trim();
-        String un_teknisi = editTextUsername.getText().toString().trim();
-        String pw_teknisi = editTextPassword.getText().toString().trim();
         String hp_teknisi = editTextHp.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
         String fp_link = editTextFotoLink.getText().toString().trim();
 
-        register(nm_teknisi, un_teknisi, pw_teknisi, hp_teknisi, email, fp_link);
+        register(nm_teknisi, hp_teknisi, email, fp_link);
     }
 
-    private void register(String nm_teknisi, String un_teknisi, String pw_teknisi, String hp_teknisi, String email, String fp_link) {
+    private void register(String nm_teknisi, String hp_teknisi, String email, String fp_link) {
         class RegisterUser extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             RequestHandler ruc = new RequestHandler();
@@ -113,11 +106,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                 HashMap<String, String> data = new HashMap<String, String>();
                 data.put("nm_teknisi", params[0]);
-                data.put("un_teknisi", params[1]);
-                data.put("pw_teknisi", params[2]);
-                data.put("hp_teknisi", params[3]);
-                data.put("email", params[4]);
-                data.put("fp_link", params[5]);
+                data.put("hp_teknisi", params[1]);
+                data.put("email", params[2]);
+                data.put("fp_link", params[3]);
 
                 String result = ruc.sendPostRequest(REGISTER_URL, data);
 
@@ -126,7 +117,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
 
         RegisterUser ru = new RegisterUser();
-        ru.execute(nm_teknisi, un_teknisi, pw_teknisi, hp_teknisi, email, fp_link);
+        ru.execute(nm_teknisi, hp_teknisi, email, fp_link);
     }
 
 }

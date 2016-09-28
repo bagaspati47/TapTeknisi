@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#E43F3F</color>
+    <color name="primary">#005c9e</color>
     <color name="primary_dark">#E12929</color>
     <color name="primary_darker">#0095ff</color>
     <color name="secondary_darker">#007ad1</color>
@@ -18,8 +18,8 @@
 
 
     //////////////custom button
-    <color name="green_temp">#23A96E</color>
-    <color name="green_dark">#159204</color>
-    <color name="bright_green">#02D8B0</color>
-    <color name="button_green">#10a54a</color>
+    <color name="green_temp">#0094fd</color>
+    <color name="green_dark">#0062a7</color>
+    <color name="bright_green">#00ccff</color>
+    <color name="button_green">#29a3fa</color>
 </resources>

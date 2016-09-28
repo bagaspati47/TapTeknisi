@@ -7,6 +7,12 @@
         mulai dari yang Online maupun di sekitar anda. \n\nAplikasi ini dapat menyediakan jasa Teknisi. Teknisi yang sudah terdaftar melewati kami,
         Teknisi tersebut akan berada di Kontak Teknisi yang langsung dapat anda hubungi. \n\nBerikut petunjuk penggunaannya:</string>
 
+
+    <string name="txtstory">TapTeknisi adalah Projek Skripi Android pertama kali saya, awalnya ingin mencoba hal yang baru untuk Projek Skripi,
+    disamping membuat video game menjadi hal yang "kurang menjanjikan" oleh beberapa dosen saya.\nTerimakasih untuk kawan-kawan saya yang telah memberi masukan dan gambaran, serta memberi semangat. Jangan menyerah untuk kalian yang belum mempunyai cukup waktu untuk menyelesaikan
+    Skripsi, maupun kalian yang menghadapi "kendala".\nAplikasi ini saya dedikasikan untuk ibu saya yang sudah meninggal dan ke 2 adik saya yang selalu membantu, banyak cerita dibalik kuliah saya.
+    </string>
+
     <string name="txtLinkHint">Link Foto\nContoh: http://10.0.3.2/gambar/alex.jpg</string>
 
     <string name="hello_world">Android Material Design App Bar/ActionBar</string>
@@ -21,8 +27,9 @@
     <string name="string_already_registered">Sudah daftar? klik tombol di bawah untuk mengecek status aktif akun maupun reputasi</string>
 
     <!-- Strings related to tentang -->
-    <string name="txttntang">TapTeknisi \n\nIde: Muhamad Akiu Bagaspati \nProgrammer: Muhamad Akiu Bagaspati
-    \nSourceCode dan Tutorial: youtube.com, google.co.id, simplifiedcoding.net, code.org, udacity.com, stackoverflow.com, developers.google.com \n\nKontak: 089680139247 \nEmail: gagakitem47@gmail.com</string>
+    <string name="txttntang">Ide: Muhamad Akiu Bagaspati
+    \nSourceCode dan Tutorial: youtube.com, google.co.id, simplifiedcoding.net, code.org, udacity.com, stackoverflow.com, developers.google.com
+     \n\nKontak: +6289680139247</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -7,12 +7,12 @@
         <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
         <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
         <item name="colorAccent">@color/accent</item>
+
     </style>
 
     <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@color/primary_darker</item>
-        <item name="android:scrollViewStyle">@color/primary_darker</item>
 
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">true</item>

@@ -12,7 +12,8 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/lytFeedback">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -28,6 +29,13 @@
                 android:layout_marginBottom="20dp"/>
 
             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtstory"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,23 +46,28 @@
                 android:autoLink="all"
                 android:layout_marginBottom="5dp"/>
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.79"
-                android:layout_marginTop="40dp"
-                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text=".special video"
-                    android:textColor="#37ff00" />
-            </LinearLayout>
 
 
 
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lytFeedback">
+
+        <Button
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="kirim feedback"
+            android:id="@+id/feedback"/>
+    </LinearLayout>
 
 </RelativeLayout>

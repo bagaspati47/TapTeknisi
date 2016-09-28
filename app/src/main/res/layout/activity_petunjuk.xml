@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".Penjual"
+    tools:context=".Petunjuk"
     android:weightSum="1">
     <ImageView
         android:layout_width="match_parent"
@@ -71,8 +71,7 @@
             android:onClick="sendTabs"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:id="@+id/button4"
-            android:layout_below="@+id/tipsRgroup"
+            android:id="@+id/button6"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_marginRight="30dp"
